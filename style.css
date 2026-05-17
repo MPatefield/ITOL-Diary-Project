@@ -1,0 +1,37 @@
+/* Using root variables and for colours to make it easier to change the colour scheme in the future. Used a colour picker tool to get as close to the wireframe provided as possible */
+:root {
+    --colour-background: #ffffff;
+    --colour-text-main: #1a1a1a;
+    --colour-text-secondary: #BFBFBF;
+    --colour-text-placeholder: #DEDEDE;
+    --colour-pill: #BFBFBF;
+    --colour-card: #FFFFFF;
+    --colour-card2: #f0f0f0;
+    --colour-header-footer: #f5fafa;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--colour-header-footer);
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--colour-background);
+    color: var(--colour-text-main);
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: smaller;
+    padding: 20px;
+    background-color: var(--colour-header-footer);
+    color: var(--colour-text-secondary);
+}
