@@ -10,20 +10,29 @@
     --colour-header-footer: #f5fafa;
 }
 
+/* General styles for the header and footer */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
     background-color: var(--colour-header-footer);
+    text-decoration: none;
 }
 
-body {
-    font-family: 'Inter', sans-serif;
-    background-color: var(--colour-background);
+/* Will need to adjust the header and nav to match wire frame with addition of extra links & new entry BUTTON and the profile icon */
+header a{
+    font-size: large;
+    text-decoration: none;
     color: var(--colour-text-main);
-    margin: 0;
-    padding: 0;
+    font-weight: bold;
+}
+
+header nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: var(--colour-text-main);
+    font-weight: bold;
 }
 
 footer {
@@ -36,6 +45,21 @@ footer {
     color: var(--colour-text-secondary);
 }
 
+footer a{
+    padding: 5px 10px;
+    font-size: smaller;
+    color: var(--colour-text-secondary);
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--colour-background);
+    color: var(--colour-text-main);
+    margin: 0;
+    padding: 0;
+}
+
 .card-container {
     max-width: 800px;
     margin: 0 auto;
@@ -44,9 +68,9 @@ footer {
 
 .input-card {
     background-color: var(--colour-card);
-    border-radius: 8px;
+    border-radius: 5px;
     padding: 20px;
-    margin: 20px;
+    margin-bottom: 16px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
