@@ -1,8 +1,8 @@
 /* Using root variables and for colours to make it easier to change the colour scheme in the future. Used a colour picker tool to get as close to the wireframe provided as possible */
 :root {
-    --colour-background: #ffffff;
+    --colour-background: #f5f5f5;
     --colour-text-main: #1a1a1a;
-    --colour-text-secondary: #BFBFBF;
+    --colour-text-secondary: #919191;
     --colour-text-placeholder: #DEDEDE;
     --colour-pill: #BFBFBF;
     --colour-card: #FFFFFF;
@@ -33,5 +33,28 @@ footer {
     font-size: smaller;
     padding: 20px;
     background-color: var(--colour-header-footer);
+    color: var(--colour-text-secondary);
+}
+
+.card-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.input-card {
+    background-color: var(--colour-card);
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.intro-card {
+    margin: 10px;
+    max-width: 60%;
+}
+
+.intro-card p{
     color: var(--colour-text-secondary);
 }
