@@ -4,7 +4,7 @@
     --colour-text-main: #1a1a1a;
     --colour-text-secondary: #919191;
     --colour-text-placeholder: #DEDEDE;
-    --colour-pill: #BFBFBF;
+    --colour-pill: #ebebeb;
     --colour-card: #FFFFFF;
     --colour-card2: #f0f0f0;
     --colour-header-footer: #f5fafa;
@@ -72,6 +72,34 @@ body {
     padding: 20px;
     margin-bottom: 16px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.date-stamp {
+    color: var(--colour-text-secondary);
+    font-size: x-small;
+    margin-bottom: 5px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.pill {
+    background-color: var(--colour-pill);
+    color: var(--colour-text-main);
+    padding: 5px 10px;
+    border-radius: 2px;
+    font-size: xx-small;
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+.edit-button {
+    background-color: transparent;
+    border: none;
+    color: var(--colour-text-secondary);
+    font-size: medium;
+    cursor: pointer;
+    float: right;
+    font-weight: bold;
 }
 
 .intro-card {
