@@ -20,8 +20,7 @@ header {
     text-decoration: none;
 }
 
-/* Will need to adjust the header and nav to match wire frame with addition of extra links & new entry BUTTON and the profile icon */
-header a{
+#logo{
     font-size: large;
     text-decoration: none;
     color: var(--colour-text-main);
@@ -29,10 +28,39 @@ header a{
 }
 
 header nav a {
+    font-size: small;
     margin: 0 15px;
     text-decoration: none;
-    color: var(--colour-text-main);
+    color: var(--colour-text-secondary);
+}
+
+header nav a.active {
+    border-bottom: 2px solid var(--colour-text-main);
+    padding-bottom: 4px;
     font-weight: bold;
+    color: var(--colour-text-main);
+}
+
+.newentry-profile-div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.newentry-profile-div a {
+    color: var(--colour-text-main);
+    text-decoration: none;
+    font-size: large;
+}
+
+.new-entry-btn {
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: x-small;
+    border: none;
+    cursor: pointer;
 }
 
 footer {
@@ -52,6 +80,8 @@ footer a{
     text-decoration: none;
 }
 
+/* General styles for the body*/
+
 body {
     font-family: 'Inter', sans-serif;
     background-color: var(--colour-background);
@@ -60,6 +90,7 @@ body {
     padding: 0;
 }
 
+/* Styles for vault.html */
 .card-container {
     max-width: 800px;
     margin: 0 auto;
@@ -92,13 +123,23 @@ body {
     margin-left: 15px;
 }
 
+.input-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input-header-left {
+    display: flex;
+    align-items: center;
+    
+}
 .edit-button {
     background-color: transparent;
     border: none;
     color: var(--colour-text-secondary);
     font-size: medium;
     cursor: pointer;
-    float: right;
     font-weight: bold;
 }
 
