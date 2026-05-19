@@ -157,6 +157,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+    align-items: stretch;
 }
 
 .grid-item {
@@ -199,7 +200,7 @@ body {
 }
 
 .grid-item:nth-child(2) {
-    background-color: var(--colour-card2)
+    background-color: var(--colour-card2);
 }
 
 .main-container {
@@ -244,3 +245,30 @@ body {
     border-bottom: 2px solid black;
 }
 
+/* Styles for the new-entry.html page */
+#entry-title {
+    font-size: x-large;
+    font-weight: bold;
+    color: var(--colour-text-main);
+    margin-bottom: 20px;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+#entry-content {
+    font-size: small;
+    color: var(--colour-text-main);
+    line-height: 1.5;
+    margin-bottom: 20px;
+    border: none;
+    outline: none;
+    background: transparent;
+    resize: both;
+}
+
+.btm-action-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

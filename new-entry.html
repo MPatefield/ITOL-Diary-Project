@@ -9,13 +9,33 @@
 </head>
 <body>
     <header>
-        <a href="index.html">Redacted</a>
-        <nav>
-                <a href="new-entry.html">New Entry</a>
-                <a href="vault.html">Vault</a>
-        </nav>
+        <a href="index.html" id="logo">Redacted</a>
+        <div class="newentry-profile-div">
+        <button class="new-entry-btn">New Entry</button>
+        <a href="#profile">&#128100;</a>
+        </div>
     </header>
     
+    <form class="main-container">
+        <p>19th May, 2026</p>
+        <input type="text" id="entry-title" placeholder="Untitled...">
+        <textarea id="entry-content" placeholder="Start writing your thoughts here..."></textarea>
+        <div class="pill-tag">
+            <span class="pill">#reflection</span>
+            <span class="pill">Add tag +</span>
+        </div>
+            <div class="btm-action-bar">
+                <div class="left-btm-action-bar">
+                <button >Insert Memory</button>
+                <button >Private</button>
+                </div>
+                <div class="right-btm-action-bar">
+                <button id="discard-btn">Discard</button>
+                <button id="save-entry">Save Entry</button>
+                </div>
+            </div>
+        </form>
+
     <footer>
         <p>&copy; 2026 Redacted. All rights reserved. Designed for reflection.</p>
         <nav>
