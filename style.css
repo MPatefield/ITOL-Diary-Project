@@ -200,11 +200,15 @@ body {
 }
 
 .grid-item:nth-child(3) {
+    display: flex;
+    flex-direction: column;
     grid-column: 1;
     background-color: var(--colour-card2)
 }
 
 .grid-item:nth-child(2) {
+    display: flex;
+    flex-direction: column;
     background-color: var(--colour-card2);
 }
 
@@ -212,6 +216,16 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+}
+
+.index-pill-tag {
+    background-color: var(--colour-pill);
+    color: var(--colour-text-main);
+    border-radius: 2px;
+    font-size: xx-small;
+    font-weight: bold;
+    margin-top: auto;
+    align-self: flex-start;
 }
 
 .cta {
@@ -269,6 +283,7 @@ form {
     font-size: smaller;
     color: var(--colour-text-placeholder);
     padding: 10px;
+    text-align: right;
 }
 
 #side-content {
@@ -276,6 +291,7 @@ form {
     color: var(--colour-text-placeholder);
     padding: 10px;
     font-style: italic;
+    text-align: right;
 }
 
 #entry-title {
@@ -303,10 +319,6 @@ form {
 
 #date-stamp {
     color: var(--colour-text-secondary)
-}
-
-textarea::placeholder{
-
 }
 
 .btm-action-bar {
