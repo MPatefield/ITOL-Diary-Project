@@ -1,40 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New Entry | Redacted</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e5f6f5a61c.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header>
         <a href="index.html" id="logo">Redacted</a>
         <div class="newentry-profile-div">
-        <button class="new-entry-btn">New Entry</button>
-        <a href="#profile">&#128100;</a>
+            <button class="new-entry-btn">New Entry</button>
+            <i class="fa-solid fa-circle-user"></i>
         </div>
     </header>
-    
+
+    <div class="entry-layout">
+        <div class="entry-sidebar">
+            <p id="side-title">DEPTH INSIGHT</p>
+            <p id="side-content">Write without judgement. The vellum remembers only what you choose to ink.</p>
+        </div>
     <form class="main-container">
-        <p>19th May, 2026</p>
-        <input type="text" id="entry-title" placeholder="Untitled...">
-        <textarea id="entry-content" placeholder="Start writing your thoughts here..."></textarea>
+        <div id="date-title">
+            <p id="date-stamp"> Wednesday, 19th May 2026</p>
+            <input type="text" id="entry-title" placeholder="Untitled Reflection...">
+        </div>
         <div class="pill-tag">
             <span class="pill">#reflection</span>
             <span class="pill">Add tag +</span>
         </div>
-            <div class="btm-action-bar">
-                <div class="left-btm-action-bar">
-                <button >Insert Memory</button>
-                <button >Private</button>
-                </div>
-                <div class="right-btm-action-bar">
+
+        <textarea id="entry-content" placeholder="Start writing your thoughts here..."></textarea>
+
+        <div class="btm-action-bar">
+            <div class="left-btm-action-bar">
+                <i class="fa-solid fa-image"></i>
+                <button class="btm-left">Insert Memory</button>
+                <i class="fa-solid fa-lock"></i>
+                <button class="btm-left">Private</button>
+            </div>
+            <div class="right-btm-action-bar">
                 <button id="discard-btn">Discard</button>
                 <button id="save-entry">Save Entry</button>
-                </div>
             </div>
-        </form>
+        </div>
+    </form>
+    </div>
 
     <footer>
         <p>&copy; 2026 Redacted. All rights reserved. Designed for reflection.</p>
@@ -42,7 +57,8 @@
             <a href="#">Privacy</a>
             <a href="#">Terms</a>
             <a href="#">Archive</a>
-            </nav>
+        </nav>
     </footer>
 </body>
+
 </html>
