@@ -304,6 +304,10 @@ form {
     background: transparent;
 }
 
+#entry-title::placeholder {
+    color: var(--colour-text-placeholder);
+}
+
 #entry-content {
     font-size: small;
     color: var(--colour-text-main);
@@ -317,8 +321,13 @@ form {
     min-height: 300px;
 }
 
+#entry-content::placeholder {
+    color: var(--colour-text-placeholder);
+}
+
 #date-stamp {
-    color: var(--colour-text-secondary)
+    color: var(--colour-text-secondary);
+    font-size: x-small;
 }
 
 .btm-action-bar {
@@ -373,4 +382,10 @@ form {
     background-color: transparent;
     color: var(--colour-text-main);
     border: none;
+    font-weight: bold;
+}
+
+/*Color styling for the icons*/
+#insert-icon, #lock-icon {
+    color: var(--colour-text-secondary);
 }
