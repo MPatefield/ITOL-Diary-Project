@@ -11,8 +11,7 @@ saveButton.addEventListener("click", function() {
     console.log(entryTitle);
     console.log(entryContent);
 
-    // Save the entry to localStorage
-    //creating the array of entries and object, pushing the new entry to the array and then saving it to localStorage as specified in Milestone 3
+    // Save the entry to localStorage, creating the array of entries and object, pushing the new entry to the array and then saving it to localStorage as specified in Milestone 3
     let entries = JSON.parse(localStorage.getItem("entries")) || [];
     const newEntry = {
         title: entryTitle,
@@ -20,4 +19,9 @@ saveButton.addEventListener("click", function() {
     };
     entries.push(newEntry);
     localStorage.setItem("entries", JSON.stringify(entries));
+
+    document.querySelector("#entry-title").value = "";
+    document.querySelector("#entry-content").value = "";
+
+    // ADDITIONAL: Alert to confirm that the entry has been saved
 });
