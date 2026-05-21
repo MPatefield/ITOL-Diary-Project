@@ -15,9 +15,11 @@ saveButton.addEventListener("click", function() {
     let entries = JSON.parse(localStorage.getItem("entries")) || [];
     const newEntry = {
         title: entryTitle,
-        content: entryContent
+        content: entryContent,
+        date: new Date().toLocaleDateString() // Adding a date property to the entry object to store the date and time when the entry was created, which can be useful for sorting and displaying entries in the future
     };
-    entries.push(newEntry);
+    // Adding the new entry to the beginning of the array using unshift so that the most recent entry appears first in the list of entries making code more efficient and easier to read when displaying the entries in the future  
+    entries.unshift(newEntry);
     localStorage.setItem("entries", JSON.stringify(entries));
 
     document.querySelector("#entry-title").value = "";
