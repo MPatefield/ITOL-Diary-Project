@@ -40,5 +40,20 @@ saveButton.addEventListener("click", function () {
     document.querySelector("#entry-title").value = "";
     document.querySelector("#entry-content").value = "";
 
-    // ADDITIONAL: Alert to confirm that the entry has been saved
+    // Displaying the toast notification when the entry is saved, by selecting the toast element and adding the "show" class to it when the save button is clicked, and then removing the "show" class after 3 seconds to hide the notification.
+    let toast = document.querySelector(".toast");
+    toast.classList.add("show");
+
+    setTimeout(() => {
+        toast.classList.remove("show");
+    }, 3000);
+
 });
+
+// Functionality to clear the entry form when the discard button is pressed, using querySelector to select the discard button and adding an event listener to clear the title and content fields when clicked.
+
+let clearEntry = document.querySelector("#discard-btn");
+    clearEntry.addEventListener("click", function () {
+        document.querySelector("#entry-title").value = "";
+        document.querySelector("#entry-content").value = "";
+    });
