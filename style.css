@@ -417,6 +417,10 @@ form {
     cursor: pointer;
 }
 
+#discard-btn:hover {
+    color: var(--colour-text-secondary);
+}
+
 .toast {
     position: fixed;
     bottom: 20px;
