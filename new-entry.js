@@ -1,9 +1,18 @@
 // Creating variable for the save button using querySelector as specified in Milestone 2
 let saveButton = document.querySelector("#save-entry");
 
+// Displaying the current date in the date stamp element using toLocaleDateString to format the date in a more readable way, and specifying the options to include the year, month, day and weekday in the desired format. This will make it easier for users to understand when the entry was created when they view it in the vault.
+let dateInput = document.querySelector("#date-stamp");
+let today = new Date().toLocaleDateString('en-GB', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric',
+            weekday: 'long'
+        }) ;
+dateInput.textContent = today.toUpperCase();
 
 //Event listener for logging the title and content when save button is pressed
-saveButton.addEventListener("click", function() {
+saveButton.addEventListener("click", function () {
     // Get the title and content of the entry and logging to console as specified in Milestone 2
     let entryTitle = document.querySelector("#entry-title").value;
     let entryContent = document.querySelector("#entry-content").value;
@@ -16,7 +25,13 @@ saveButton.addEventListener("click", function() {
     const newEntry = {
         title: entryTitle,
         content: entryContent,
-        date: new Date().toLocaleDateString() // Adding a date property to the entry object to store the date and time when the entry was created, which can be useful for sorting and displaying entries in the future
+        // Using toLocaleDateString to format the date in a more readable way, and specifying the options to include the year, month, day and weekday in the desired format. This will make it easier for users to understand when the entry was created when they view it in the vault.
+        date: new Date().toLocaleDateString('en-GB', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric',
+            weekday: 'long'
+        }) 
     };
     // Adding the new entry to the beginning of the array using unshift so that the most recent entry appears first in the list of entries making code more efficient and easier to read when displaying the entries in the future  
     entries.unshift(newEntry);

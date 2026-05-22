@@ -3,7 +3,23 @@ let cardContainer = document.querySelector(".card-container");
 
 cardContainer.innerHTML = "";
 
-entries.forEach(function(entry) {
+//Noticed by clearing the card container, the intro card is also cleared. So I need to create it again here.
+    let introCard = document.createElement("div");
+    introCard.classList.add("intro-card");
+
+    let introTitle = document.createElement("h1");
+    introTitle.textContent = "My Vault";
+
+    let introText = document.createElement("p");
+    introText.textContent = "A sanctuary for the whispers of the past, preserved in ink and digital shadow. Every word a cornerstone of who you were, and who you are becoming.";
+
+    introCard.appendChild(introTitle);
+    introCard.appendChild(introText);
+    cardContainer.appendChild(introCard);
+
+entries.forEach(function (entry) {
+    
+
     let entryDiv = document.createElement("div");
     entryDiv.classList.add("input-card");
 
@@ -16,7 +32,7 @@ entries.forEach(function(entry) {
 
     let entryContent = document.createElement("p");
     entryContent.textContent = entry.content;
-    
+
     entryDiv.appendChild(entryDate);
     entryDiv.appendChild(entryTitle);
     entryDiv.appendChild(entryContent);
