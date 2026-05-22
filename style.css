@@ -10,6 +10,9 @@
     --colour-header-footer: #f5fafa;
 }
 
+
+
+
 /* universal font applied */
 * {
     font-family: 'Inter', sans-serif;
@@ -434,6 +437,65 @@ form {
 }
 
 /*Color styling for the icons*/
-#insert-icon, #lock-icon {
+#insert-icon,
+#lock-icon {
     color: var(--colour-text-secondary);
+}
+
+/* Responsive design for smaller screens - using media queries to adjust the layout and font sizes for better readability on mobile devices */
+@media screen and (max-width: 768px) {
+    .entry-layout {
+        flex-direction: column;
+    }
+
+    .entry-sidebar {
+        order: 1;
+    }
+
+    form {
+        order: 2;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    #entry-title {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    #entry-content {
+        width: 100%;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .main-container {
+        padding: 10px;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-item {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+    .grid-item:nth-child(1) {
+        grid-column: auto;
+        grid-row: auto;
+    }
+
+    .grid-item:nth-child(4) {
+        grid-column: auto;
+    }
+
+    .card-container {
+        padding: 10px;
+    }
 }
