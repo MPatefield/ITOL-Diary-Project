@@ -10,9 +10,6 @@
     --colour-header-footer: #f5fafa;
 }
 
-
-
-
 /* universal font applied */
 * {
     font-family: 'Inter', sans-serif;
@@ -28,6 +25,7 @@ header {
     text-decoration: none;
 }
 
+/* Styles for the header - using flexbox to space out the content and align it properly. Also sets the background colour and text colour for the header */
 #logo {
     font-size: large;
     text-decoration: none;
@@ -333,6 +331,7 @@ form {
     border: none;
     outline: none;
     background: transparent;
+    width: 100%;
 }
 
 #entry-title::placeholder {
@@ -426,7 +425,7 @@ form {
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: var(--colour-card);
+    background-color: var(--colour-background);
     color: var(--colour-text-main);
     padding: 10px 20px;
     border-radius: 5px;

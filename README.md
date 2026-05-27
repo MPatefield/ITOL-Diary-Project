@@ -10,6 +10,8 @@ Link to relevant MDN documentation:
 Comments:
 So i've finally completed the project with all parts tested and working. Getting as close to the wireframe as possible took the most time and enjoyed the JS as it was a challenge having to research localStorage and play with JSON.parse & JSON.stringify as havent encountered them before. To tackle the '5 most recent entries logic' i decided to use the unshift method instead of the push method to add the newest objects at the front of the array and not the back. This is so i didnt have to reverse the array before pushing the 'new-entry'. I think there is definitely one thing i could improve on, and that is selecting class/ID names for elemtnts for HTML & CSS. Could make the CSS more efficient and easily readable. However, i do like creating root variables within the CSS which enables ease of design changes throughout without having to change individual lines of code.
 
+Posted live netlify: https://euphonious-vacherin-96ee25.netlify.app/
+
 Images below;
 
 ![new-entry.html](image.png)
