@@ -1,6 +1,7 @@
 // Creating variable for the save button using querySelector as specified in Milestone 2
 let saveButton = document.querySelector("#save-entry");
-
+// Creating a variable to track the private state of the entry, initializing it to false so that entries are public by default
+let isPrivate = false;
 // Displaying the current date in the date stamp element using toLocaleDateString to format the date in a more readable way, and specifying the options to include the year, month, day and weekday in the desired format. This will make it easier for users to understand when the entry was created when they view it in the vault.
 let dateInput = document.querySelector("#date-stamp");
 let today = new Date().toLocaleDateString('en-GB', {
@@ -25,6 +26,7 @@ saveButton.addEventListener("click", function () {
     const newEntry = {
         title: entryTitle,
         content: entryContent,
+        private: isPrivate,
         // Using toLocaleDateString to format the date in a more readable way, and specifying the options to include the year, month, day and weekday in the desired format. This will make it easier for users to understand when the entry was created when they view it in the vault.
         date: new Date().toLocaleDateString('en-GB', {
             year: 'numeric',
@@ -57,3 +59,19 @@ let clearEntry = document.querySelector("#discard-btn");
         document.querySelector("#entry-title").value = "";
         document.querySelector("#entry-content").value = "";
     });
+
+//Functionality for Private button 
+let privateButton = document.querySelector("#private-button");
+let lockIcon = document.querySelector("#lock-icon");
+privateButton.addEventListener("click", function () {
+    isPrivate = !isPrivate; // Toggle the private state
+
+    // Update the button text and icon based on the private state
+    if (isPrivate) {
+        privateButton.innerHTML = '<i id="lock-icon" class="fa-solid fa-lock"></i>Private';
+        privateButton.style.color = "#ff8686"; // Change background color to indicate private state
+    } else {
+        privateButton.innerHTML = '<i id="lock-icon" class="fa-solid fa-lock-open"></i>Public';
+        privateButton.style.color = "#919191"; // Revert background color to default
+    }
+});

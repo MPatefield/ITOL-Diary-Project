@@ -22,8 +22,8 @@ Images below;
 
 Things i'd like to add:
 - Working tab(pill) selector - Select what kind of entry and maybe subtly changing the colour of cards corresponding to tab selected
-- Better displaying of date, formatting of toLocaleDateString()
+- Better displaying of date, formatting of toLocaleDateString() - Completed May 22nd
 - Finishing other pages ie. Privacy, terms, Archive, Profile
-- Working 'insert memory' & 'Private' buttons on new-entry.html
-- Correct footer location (Stuck to the bottom of the screen)
-- Use of media querys to improve UI accesibility on different sized screens
+- Working 'insert memory' & 'Private' buttons on new-entry.html - Started on private function 28th May - incomplete
+- Correct footer location (Stuck to the bottom of the screen) - Completed 22nd May
+- Use of media querys to improve UI accesibility on different sized screens - Completed May 22nd 

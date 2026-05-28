@@ -442,8 +442,17 @@ form {
 /*Color styling for the icons*/
 #insert-icon,
 #lock-icon {
-    color: var(--colour-text-secondary);
+    margin-right: 5px;
+    color: inherit;
 }
+
+/* Adding a class for private entries to style them differently in the vault, using a lighter background colour and a border to visually distinguish them from public entries */
+.private-entry {
+    display: none;
+}
+
+/*Creation of Slider toggle*/
+
 
 /* Responsive design for smaller screens - using media queries to adjust the layout and font sizes for better readability on mobile devices */
 @media screen and (max-width: 768px) {
@@ -485,9 +494,9 @@ form {
     }
 
     .grid-item {
-    width: 100%;
-    box-sizing: border-box;
-}
+        width: 100%;
+        box-sizing: border-box;
+    }
 
     .grid-item:nth-child(1) {
         grid-column: auto;

@@ -18,7 +18,10 @@ cardContainer.innerHTML = "";
     cardContainer.appendChild(introCard);
 
 entries.forEach(function (entry) {
-    
+    // Adding a class to the entry div if the entry is marked as private, so that it can be styled differently in the CSS to visually distinguish private entries from public ones when displayed in the vault.
+    if (entry.private) {
+    entryDiv.classList.add("private-entry");
+}
 
     let entryDiv = document.createElement("div");
     entryDiv.classList.add("input-card");
