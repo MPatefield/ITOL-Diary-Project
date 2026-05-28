@@ -448,9 +448,12 @@ form {
 
 /* Adding a class for private entries to style them differently in the vault, using a lighter background colour and a border to visually distinguish them from public entries */
 .private-entry {
-    display: none;
+    display: none; /* hidden by default */
 }
 
+.show-private .private-entry {
+    display: block; /* visible when container has show-private class */
+}
 /*Creation of Slider toggle*/
 
 
