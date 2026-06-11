@@ -10,7 +10,7 @@
     --colour-header-footer: #f5fafa;
 }
 
-/* universal font applied */
+/* universal font applied, saves from having to specify the font for each element */
 * {
     font-family: 'Inter', sans-serif;
 }
@@ -25,7 +25,7 @@ header {
     text-decoration: none;
 }
 
-/* Styles for the header - using flexbox to space out the content and align it properly. Also sets the background colour and text colour for the header */
+/* Styles for the header - using flexbox to space out the content and align it properly in one dimension. Also sets the background colour and text colour for the header */
 #logo {
     font-size: large;
     text-decoration: none;
@@ -146,6 +146,7 @@ body {
 
 }
 
+/*Need  to implement this inside vault.js as i have forgotten to re-render, will then add functionality*/
 .edit-button {
     background-color: transparent;
     border: none;
@@ -164,7 +165,7 @@ body {
     color: var(--colour-text-secondary);
 }
 
-/*Styles for index.html - grid layout for the cards*/
+/*Styles for index.html - grid layout for the cards to show 2 dimensionally*/
 .vault-btn {
     background-color: transparent;
     border: none;
@@ -213,6 +214,7 @@ body {
     line-height: 1.5;
 }
 
+/* Used flex on cards which require multiple elements to be aligned in a certain way, such as the second card which has the title and description at the top and the pill tag at the bottom. Also used grid column and row spans to make certain cards larger than others, such as the first card which spans 2 columns and 2 rows to make it larger and more prominent on the page. */
 .grid-item:nth-child(1) {
     grid-column: span 2;
     grid-row: span 2;
@@ -304,6 +306,7 @@ body {
     padding: 20px;
 }
 
+/* Using flex 1 to tell the form to take up the rest of the space in the entry layout, while the sidebar takes up only as much space as it needs. This allows for a responsive design where the form can expand and contract based on the available space, while the sidebar remains a fixed width. */
 form {
     flex: 1;
 }
@@ -454,8 +457,6 @@ form {
 .show-private .private-entry {
     display: block; /* visible when container has show-private class */
 }
-/*Creation of Slider toggle*/
-
 
 /* Responsive design for smaller screens - using media queries to adjust the layout and font sizes for better readability on mobile devices */
 @media screen and (max-width: 768px) {

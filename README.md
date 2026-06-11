@@ -27,3 +27,4 @@ Things i'd like to add:
 - Working 'insert memory' & 'Private' buttons on new-entry.html - Started on private function 28th May - incomplete
 - Correct footer location (Stuck to the bottom of the screen) - Completed 22nd May
 - Use of media querys to improve UI accesibility on different sized screens - Completed May 22nd 
+- Noticed an issue with forgetting to re-render the 'edit-btn' on vault.html
